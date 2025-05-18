@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Handev | Cyber Security Specialist</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #0d1117;
+      --text-light: #c9d1d9;
+      --accent: #00ffaa;
+      --card-bg: rgba(255, 255, 255, 0.05);
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      font-family: 'JetBrains Mono', monospace;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-image: repeating-linear-gradient(45deg, rgba(0, 255, 170, 0.1) 0, rgba(0, 255, 170, 0.1) 1px, transparent 1px, transparent 20px);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      padding: 4rem 1rem 2rem;
+      text-align: center;
+      background: linear-gradient(to bottom, #0d1117, #161b22);
+      border-bottom: 1px solid #30363d;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 1rem;
+      height: 100px;
+      width: 100px;
+      border-radius: 12px;
+      background-color: #0d1117;
+      box-shadow: 0 0 15px 5px var(--accent);
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      margin: 0;
+      color: var(--accent);
+      text-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #8b949e;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .section {
+      margin-bottom: 4rem;
+    }
+
+    h4 {
+      border-left: 4px solid var(--accent);
+      padding-left: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+
+    .card-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 1rem;
+      border-radius: 10px;
+      border: 1px solid #30363d;
+    }
+
+    .testimonial-slider {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .testimonial-slide {
+      display: none;
+      text-align: center;
+    }
+
+    .testimonial-slide.active {
+      display: block;
+    }
+
+    .testimonial-slide img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 0.5rem;
+    }
+
+    .wa-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 9999;
+      text-decoration: none;
+    }
+
+    .wa-button:hover {
+      background-color: #1ebe57;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="https://i.imgur.com/QBYl6yA.png" alt="Handev Logo" class="logo" />
+    <h1>Handev</h1>
+    <p>Cyber Security Specialist | Ethical Hacking</p>
+  </header>
+
+  <div class="container">
+    <section class="section" id="tentang">
+      <h4>Tentang</h4>
+      <p>Handev adalah spesialis keamanan siber yang berfokus membantu orang dan organisasi menjaga data serta sistem mereka tetap aman dari ancaman digital...</p>
+    </section>
+
+    <section class="section" id="jasa">
+      <h4>Jasa yang Ditawarkan</h4>
+      <div class="card-box">
+        <div class="card"><a href="https://wa.me/6287838610568">Penetration Testing</a></div>
+        <div class="card"><a href="https://wa.me/6287838610568">Vulnerability Assessment</a></div>
+        <div class="card"><a href="https://wa.me/6287838610568">OSINT Investigation</a></div>
+        <div class="card"><a href="https://wa.me/6287838610568">Cyber Security Consultation</a></div>
+      </div>
+    </section>
+
+    <section class="section" id="showcase">
+      <h4>Project Showcase</h4>
+      <div class="card-box">
+        <div class="card"><strong>OSINT Phone Doxxer</strong> – <a href="https://github.com/handev-code/osint-phone-doxxer">Lihat di GitHub</a></div>
+        <div class="card"><strong>Telegram Bot OSINT</strong> – <a href="https://github.com/handev-code/telegram-bot-osint">Lihat di GitHub</a></div>
+      </div>
+    </section>
+
+    <section class="section" id="testimoni">
+      <h4>Testimoni Klien</h4>
+      <div class="testimonial-slider">
+        <div class="testimonial-slide active">
+          <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=arif" alt="Ar">
+          <p>"Layanan OSINT-nya luar biasa detail. Saya berhasil tracking akun palsu."<br><strong>Ar, Jakarta</strong><br><small>arif.****@gmail.com</small></p>
+        </div>
+        <div class="testimonial-slide">
+          <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=ed" alt="ED">
+          <p>"Penerapan test-nya cepat, hasil laporan sangat profesional."<br><strong>ED, CTO Startup</strong><br><small>erik.dar*****@startups.id</small></p>
+        </div>
+        <!-- Tambahkan lebih banyak slide jika perlu -->
+      </div>
+    </section>
+
+    <section class="section" id="kontak">
+      <h4>Hubungi Saya</h4>
+      <p>Email: handevprogramcode@gmail.com<br>Instagram: @handev.code<br><a href="https://wa.me/6287838610568">WhatsApp: +62 878-3861-0568</a></p>
+    </section>
+  </div>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/6287838610568" class="wa-button" target="_blank" aria-label="Chat via WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 24 24">
+      <path d="M20.52 3.48a11.93 11.93 0 0 0-16.9 0..."/>
+    </svg>
+  </a>
+
+  <script>
+    let current = 0;
+    const slides = document.querySelectorAll('.testimonial-slide');
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 4000);
+  </script>
+</body>
+
+</html>
